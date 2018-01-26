@@ -8,7 +8,7 @@ myApp.factory("SongFactory", function($q, $http) {
         // new angular shit: $q = promises
         return $q((resolve, reject) => {
             // new angular shit: $http = ajax
-            $http.get("/assets/js/funStuff/data/songs.json")
+            $http.get("/assets/js/data/songs.json")
                 .then(response => resolve(response))
                 .catch(err => reject(err));
         });
