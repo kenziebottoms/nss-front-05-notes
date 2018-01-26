@@ -1,7 +1,7 @@
 {
   "name": "name",
   "version": "1.0.0",
-  "description": "",
+  "description": "An empty Grunt-running setup including:",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +10,22 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.6.8",
+    "angular-route": "^1.6.8",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.2.0",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "handlebars": "^4.0.11",
-    "hbsfy": "^2.8.1",
     "matchdep": "^2.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenziebottoms/nss-front-05-angular-browserify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kenziebottoms/nss-front-05-angular-browserify/issues"
+  },
+  "homepage": "https://github.com/kenziebottoms/nss-front-05-angular-browserify#readme"
 }
