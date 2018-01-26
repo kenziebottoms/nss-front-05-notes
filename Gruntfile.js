@@ -4,15 +4,12 @@ module.exports = function(grunt) {
             files: {
                 src: "assets/js/main.js",
                 dest: "dist/bundle.js",
-            },
-            options: {
-                transform: ["hbsfy"],
             }
         },
         jshint: {
             files: ["assets/js/**/*.js"],
             options: {
-                predef: ["document", "console", "$", "alert"],
+                predef: ["document", "console", "alert"],
                 esnext: true,
                 globalstrict: true,
                 globals: {},
@@ -34,10 +31,6 @@ module.exports = function(grunt) {
             sass: {
                 files: ["assets/sass/**/*.scss"],
                 tasks: ["sass"],
-            },
-            hbs: {
-                files: ["assets/templates/**/*.hbs"],
-                tasks: ["browserify"]
             }
         },
     });
