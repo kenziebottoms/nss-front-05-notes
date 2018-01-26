@@ -1,7 +1,7 @@
 {
   "name": "name",
   "version": "1.0.0",
-  "description": "An empty Grunt-running setup including:",
+  "description": "An empty Grunt-running setup including Angular JS",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,14 +20,5 @@
     "jquery": "^3.3.1",
     "lodash": "^4.17.4",
     "matchdep": "^2.0.0"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kenziebottoms/blank-grunt-project-angular.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kenziebottoms/blank-grunt-project-angular/issues"
-  },
-  "homepage": "https://github.com/kenziebottoms/blank-grunt-project-angular#readme"
+  }
 }
