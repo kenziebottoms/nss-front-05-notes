@@ -14,23 +14,27 @@ In this exercise, you'll be requiring users to register and log into your applic
 
 ### Firebase
 
-- [ ] Create a Firebase collection named `notes`
-- [ ] Use the basic Firebase email/password authentication to register users for your application.
+- [x] Create a Firebase collection named `notes`
+- [x] Use the basic Firebase email/password authentication to register users for your application.
 
 ### Application
 
-- [ ] Create an Angular application module.
+- [x] Create an Angular application module.
 - [ ] Create 4 partials for views.
-    - [ ] A registration view
-    - [ ] A login view
+    - [x] A registration view
+    - [x] A login view
     - [ ] A new note form
     - [ ] A note list form
 - [ ] Configure your application to support the following routes.
     - [ ] `/register`
-    - [ ] `/login`
-    - [ ] `/notes`
+    - [x] `/login`
+    - [ ] ~~`/notes`~~ `/all`
     - [ ] `/new`
 - [ ] Write a controller for each of the partials
+    - [ ] ~~`RegisterCtrl`~~
+    - [x] `LoginCtrl`
+    - [x] `NoteListCtrl`
+    - [ ] `NewNoteCtrl`
 
 ### New Note Form
 
@@ -40,5 +44,5 @@ In this exercise, you'll be requiring users to register and log into your applic
 
 ### Note List
 
-- [ ] When the user visits the `/notes` URL, the user should see all of the notes that were entered by that user, and no others.
-- [ ] Use the `orderBy` and `equalTo` parameters in the `$http` request to only return notes created by the current user.
+- [x] When the user visits the ~~`/notes`~~ `/all` URL, the user should see all of the notes that were entered by that user, and no others.
+- [x] Use the `orderBy` and `equalTo` parameters in the `$http` request to only return notes created by the current user.
