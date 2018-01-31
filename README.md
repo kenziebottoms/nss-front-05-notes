@@ -1,5 +1,11 @@
 # User Notes with Authentication
 
+![](https://img.shields.io/badge/data-firebase_api-blue.svg)
+![](https://img.shields.io/badge/template-angular-red.svg)
+![](https://img.shields.io/badge/modularity-browserify-yellow.svg)
+![](https://img.shields.io/badge/css_framework-materialize-F95972.svg)
+![](https://img.shields.io/badge/mvp-working-green.svg)
+
 ### Run locally
 
 ```bash
