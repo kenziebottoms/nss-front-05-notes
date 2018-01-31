@@ -21,16 +21,16 @@ In this exercise, you'll be requiring users to register and log into your applic
 
 - [x] Create an Angular application module.
 - [x] Create 4 partials for views.
-    - [] ~~A registration view~~
+    - [ ] ~~A registration view~~
     - [x] A login view
     - [x] A new note form
     - [x] A note list form
-- [ ] Configure your application to support the following routes.
+- [x] Configure your application to support the following routes.
     - [ ] ~~`/register`~~
     - [x] `/login`
     - [x] ~~`/notes`~~ `/all`
     - [x] `/new`
-- [ ] Write a controller for each of the partials
+- [x] Write a controller for each of the partials
     - [ ] ~~`RegisterCtrl`~~
     - [x] `LoginCtrl`
     - [x] `NoteListCtrl`

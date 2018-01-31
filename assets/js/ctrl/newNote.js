@@ -13,6 +13,6 @@ angular.module("NoteApp").controller("NewNoteCtrl", function($scope, UserFactory
 
     $scope.saveNote = () => {
         FirebaseFactory.addNote($scope.uid, $scope.content)
-            .then($location.path("/all"));
+            .then(results => $location.path("/all"));
     };
 });
