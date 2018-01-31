@@ -2,15 +2,19 @@
 
 const angular = require("angular");
 
-angular.module("NoteApp").factory("FirebaseFactory", function($q, $http, firebase) {
-    // TODO: actually hook up UID
-    let getNotes = uid => {
+angular.module("NoteApp").factory("UserFactory", function($q, $http) {
+    const firebase = require("firebase");
+    const getActiveUser = () => {
         return $q((resolve, reject) => {
-            $http.get(firebase.dbUrl)
-                .then(response => resolve(response))
-                .catch(err => reject(err));
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                    resolve(user);
+                } else {
+                    reject("No active user");
+                }
+            });
         });
     };
 
-    return { getNotes };
+    return { getActiveUser };
 });

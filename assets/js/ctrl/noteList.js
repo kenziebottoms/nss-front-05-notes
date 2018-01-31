@@ -2,6 +2,12 @@
 
 const angular = require("angular");
 
-angular.module("NoteApp").controller("NoteListCtrl", function($scope) {
-    $scope.message = "It works";
+angular.module("NoteApp").controller("NoteListCtrl", function($scope, UserFactory, $location) {
+    UserFactory.getActiveUser().then(user => {
+        if (user) {
+            $scope.user = user;
+        } else {
+            $location.path("/");
+        }
+    });
 });
