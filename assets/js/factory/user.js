@@ -1,16 +1,16 @@
 "use strict";
 
 const angular = require("angular");
-const myApp = angular.module("appName");
 
-myApp.factory("Factory", function($q, $http) {
-    let getData = () => {
+angular.module("NoteApp").factory("FirebaseFactory", function($q, $http, firebase) {
+    // TODO: actually hook up UID
+    let getNotes = uid => {
         return $q((resolve, reject) => {
-            $http.get("/assets/js/data/assets.json")
+            $http.get(firebase.dbUrl)
                 .then(response => resolve(response))
                 .catch(err => reject(err));
         });
     };
 
-    return { getData };
+    return { getNotes };
 });
