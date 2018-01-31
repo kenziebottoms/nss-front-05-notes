@@ -6,9 +6,10 @@ angular.module("NoteApp").controller("NoteListCtrl", function($scope, UserFactor
     UserFactory.getActiveUser().then(user => {
         if (user) {
             $scope.uid = user.uid;
+            console.log("getting notes");
             FirebaseFactory.getNotes(user.uid)
                 .then(({data}) => {
-                    console.log(data);
+                    $scope.notes = Object.values(data);
                 })
                 .catch(err => console.log("couldn't get notes", err));
         } else {

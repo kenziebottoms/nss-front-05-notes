@@ -20,29 +20,35 @@ In this exercise, you'll be requiring users to register and log into your applic
 ### Application
 
 - [x] Create an Angular application module.
-- [ ] Create 4 partials for views.
-    - [x] A registration view
+- [x] Create 4 partials for views.
+    - [] ~~A registration view~~
     - [x] A login view
-    - [ ] A new note form
-    - [ ] A note list form
+    - [x] A new note form
+    - [x] A note list form
 - [ ] Configure your application to support the following routes.
-    - [ ] `/register`
+    - [ ] ~~`/register`~~
     - [x] `/login`
-    - [ ] ~~`/notes`~~ `/all`
-    - [ ] `/new`
+    - [x] ~~`/notes`~~ `/all`
+    - [x] `/new`
 - [ ] Write a controller for each of the partials
     - [ ] ~~`RegisterCtrl`~~
     - [x] `LoginCtrl`
     - [x] `NoteListCtrl`
-    - [ ] `NewNoteCtrl`
+    - [x] `NewNoteCtrl`
 
 ### New Note Form
 
-- [ ] A text field labeled "Enter note:".
-- [ ] A button labeled "Save".
-    - [ ] When the button is clicked, save a new item in the Firebase `notes` collection, along with the current user's unique id.
+- [x] A text field labeled "Enter note:".
+- [x] A button labeled "Save".
+    - [x] When the button is clicked, save a new item in the Firebase `notes` collection, along with the current user's unique id.
 
 ### Note List
 
 - [x] When the user visits the ~~`/notes`~~ `/all` URL, the user should see all of the notes that were entered by that user, and no others.
 - [x] Use the `orderBy` and `equalTo` parameters in the `$http` request to only return notes created by the current user.
+
+### Should do:
+
+- [ ] Prevent submission of empty textarea.
+- [ ] Date and order the notes.
+- [ ] Add delete feature.
