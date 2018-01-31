@@ -1,57 +1,44 @@
-# Blank Grunt project
+# User Notes with Authentication
 
-An empty Grunt-running setup including:
+### Run locally
 
-![](https://img.shields.io/badge/updated-jan_26th_2018-green.svg)
-![](https://img.shields.io/badge/grunt-v1.0.1-yellow.svg)
-![](https://img.shields.io/badge/angularJS-v1.6.8-red.svg)
-![](https://img.shields.io/badge/jquery-v3.3.1-blue.svg)
-![](https://img.shields.io/badge/lodash-v4.17.4-blue.svg)
-
-# Using this repo
-
-### Initialize an `npm` project for use with Grunt
-
-In the root:
-
-```shell
-> npm init -y
+```bash
+git clone git@github.com:kenziebottoms/nss-front-05-notes.git
+npm install
+grunt
 ```
 
-`-y` says yes to every question `npm init` would otherwise ask you.
+## Requirements
 
-### Install necessary `npm` modules
+In this exercise, you'll be requiring users to register and log into your application before they can use it. The user interface is very simple once they log in, because this is a basic application that will allow them to enter notes, and then view all notes.
 
-These are listed as dependencies in `package.json` already.
+### Firebase
 
-```shell
-> npm install
-```
+- [ ] Create a Firebase collection named `notes`
+- [ ] Use the basic Firebase email/password authentication to register users for your application.
 
-### File structure
+### Application
 
-```
-root
- |--assets
- |   |--css
- |   |
- |   |--js
- |   |   |--ctrl
- |   |   |--data
- |   |   |--factory
- |   |   |--partials
- |   |   |--main.js
- |   |   `--router.js
- |   |
- |   |--sass
- |   `--templates
- |       `--partials
- |
- |--dist
- |   `--bundle.js
- |
- |--.gitignore
- |--Gruntfile.js
- |--package.json
- `--index.html
-```
+- [ ] Create an Angular application module.
+- [ ] Create 4 partials for views.
+    - [ ] A registration view
+    - [ ] A login view
+    - [ ] A new note form
+    - [ ] A note list form
+- [ ] Configure your application to support the following routes.
+    - [ ] `/register`
+    - [ ] `/login`
+    - [ ] `/notes`
+    - [ ] `/new`
+- [ ] Write a controller for each of the partials
+
+### New Note Form
+
+- [ ] A text field labeled "Enter note:".
+- [ ] A button labeled "Save".
+    - [ ] When the button is clicked, save a new item in the Firebase `notes` collection, along with the current user's unique id.
+
+### Note List
+
+- [ ] When the user visits the `/notes` URL, the user should see all of the notes that were entered by that user, and no others.
+- [ ] Use the `orderBy` and `equalTo` parameters in the `$http` request to only return notes created by the current user.
