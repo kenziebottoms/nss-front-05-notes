@@ -11,6 +11,7 @@ require("./autorun");
 
 require("./ctrl/noteList");
 require("./ctrl/login");
+require("./ctrl/newNote");
 
 require("./factory/firebase");
 require("./factory/user");

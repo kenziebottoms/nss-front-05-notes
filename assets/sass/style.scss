@@ -2,7 +2,7 @@ body {
     background: #f0f0f0;
 }
 
-#login {
+#login, #new {
     background: #fff;
     max-width: 30rem;
     margin: 5rem auto;
@@ -11,4 +11,7 @@ body {
         display: flex;
         justify-content: space-between;
     }
+}
+#new {
+    max-width: 50rem;
 }

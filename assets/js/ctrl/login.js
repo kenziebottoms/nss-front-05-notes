@@ -2,8 +2,8 @@
 
 const angular = require("angular");
 
-angular.module("NoteApp").controller("LoginCtrl", function($scope, UserFactory, $location) {
-    // if user is logged in, redirec to homepage
+angular.module("NoteApp").controller("LoginCtrl", function ($scope, UserFactory, $location) {
+    // if user is logged in, redirect to homepage
     UserFactory.isLoggedIn()
         .then(response => $location.path("/all"))
         .catch();

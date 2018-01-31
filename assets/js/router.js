@@ -12,5 +12,9 @@ angular.module("NoteApp").config($routeProvider => {
             templateUrl: "assets/partials/note-list.html",
             controller: "NoteListCtrl"
         })
+        .when("/new", {
+            templateUrl: "assets/partials/new-note.html",
+            controller: "NewNoteCtrl"
+        })
         .otherwise("/");
 });
