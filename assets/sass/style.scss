@@ -1,0 +1,14 @@
+body {
+    background: #f0f0f0;
+}
+
+#login {
+    background: #fff;
+    max-width: 30rem;
+    margin: 5rem auto;
+    #buttons {
+        padding: .8rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}

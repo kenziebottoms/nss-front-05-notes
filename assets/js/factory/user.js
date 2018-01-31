@@ -16,5 +16,25 @@ angular.module("NoteApp").factory("UserFactory", function($q, $http) {
         });
     };
 
-    return { getActiveUser };
+    let isLoggedIn = () => {
+        return $q((resolve, reject) => {
+            getActiveUser()
+                .then(user => resolve(true))
+                .catch(err => reject("no active user"));
+        });
+    };
+
+    const register = (email, pw) => {
+        return firebase.auth().createUserWithEmailAndPassword(email, pw);
+    };
+    
+    const login = (email, pw) => {
+        return firebase.auth().signInWithEmailAndPassword(email, pw);
+    };
+
+    const logout = () => {
+        return firebase.auth().signOut();
+    };
+
+    return { getActiveUser, register, login, isLoggedIn };
 });
