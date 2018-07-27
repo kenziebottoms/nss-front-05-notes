@@ -10,9 +10,13 @@
 
 ```bash
 git clone git@github.com:kenziebottoms/nss-front-05-notes.git
+cd nss-front-05-notes
 npm install
 grunt
+hs -o
 ```
+
+> Note: This won't work unless you have the `keys.js` module. Which I'm not going to give you.
 
 ## Requirements
 
